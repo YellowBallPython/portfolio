@@ -92,8 +92,14 @@ body {
 .introductory_wrapper .intro_text_wrapper{
     background:violet;
     min-height: 24em;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
 }
 
+.introductory_wrapper .intro_text_wrapper h1 {
+    font-size:64px;
+}
 
 /* ---------------------- CONTENT --------------------- */
 
