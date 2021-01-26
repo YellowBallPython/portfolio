@@ -3,7 +3,7 @@
 :root {
     --main_color: white;
     --font_color: black;
-    --border_color: gray;
+    --border_color: black;
     --font_hover: #17b978;
     --icon_hover: #492fa7;
     --font_family: 'Roboto Mono', sans-serif;
@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, strong, p, li, span, label, textarea {
+h1, h2, h3, h4, h5, h6, strong, p, li, span, label, textarea, small{
     color: var(--font_color);
     font-family: var(--font_family);
 }
@@ -37,26 +37,24 @@ body {
 
 
 .main_nav {
-    width: 1300px;
+    width: 1400px;
     min-height: 24em;
     margin: 0 auto;
 }
 
 .introductory_wrapper{
-    width: 1300px;
+    width: 1400px;
     margin: 0 auto;
 }
 
 .content_wrapper{
-    border: 2px solid black;
-    width: 1300px;
+    width: 1400px;
     margin: 0 auto;
 }
 
 /* ---------------------- NAV_WRAPPER --------------------- */
 
 .main_nav .nav_wrapper {
-    background:blue;
     min-height: 24em;
     display:flex;
     flex-direction:column;
@@ -82,15 +80,21 @@ body {
 
 .main_nav .nav_wrapper .nav_bar li{
     font-size: 34px;
-    margin: 20px;
-    border: 2px solid white;
+    margin: 0 20px;
+    border: 3px solid var(--border_color);
     border-radius: 50px;
     padding: 8px 25px;
+}
+
+/* --- a TAG --- */
+
+.main_nav .nav_wrapper .nav_bar a, a:visited {
+    text-decoration: none;
+    color: var(--font_color);
 }
 /* ---------------------- INDTRODUCTORY WRAPPER --------------------- */
 
 .introductory_wrapper .intro_text_wrapper{
-    background:violet;
     min-height: 24em;
     display:flex;
     flex-direction:column;
@@ -135,18 +139,55 @@ body {
     padding: 30px;
 }
 
+/*left box - profile image*/
+
 .content_wrapper .s1 .box1 .top_left {
     grid-area: "a";
-    background: blue;
+    padding: 20px
 }
+
+.content_wrapper .s1 .box1 .top_left img{
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+}
+
+/*left box - personal information - */
+
 .content_wrapper .s1 .box1 .top_right {
     grid-area: "b";
-    background: red;
 }
+
+.content_wrapper .s1 .box1 .top_right hr{
+    margin: 10px 0 ;
+}
+
+.content_wrapper .s1 .box1 .top_right p {
+    margin: 6px;
+}
+
+/*left box - social icons - */
+
+.content_wrapper .s1 .box1 .top_right .social_icons {
+    display:flex;
+    justify-content: space-between;
+    font-size: 35px;
+    padding: 0 15px;
+    margin-top: 40px;
+}
+
+/*left box - bottom*/
+
 .content_wrapper .s1 .box1 .bottom {
     grid-area: "c";
     grid-column: span 2;
-    background: yellow;
+    border: 2px solid var(--border_color);
+    padding: 10px;
+    font-weight: 300;
+}
+
+.content_wrapper .s1 .box1 .bottom hr {
+    margin: 10px 0;
 }
 
 
