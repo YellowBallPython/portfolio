@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --main_color: white;
+    --font_color: black;
+    --border_color: gray;
+    --font_hover: #17b978;
+    --icon_hover: #492fa7;
+    --font_family: 'Roboto Mono', sans-serif;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, strong, p, li, span, label, textarea {
+    color: var(--font_color);
+    font-family: var(--font_family);
+}
+
+/* ---------------- BODY ---------------- */
+
+body {
+    display:grid;
+    grid-template-areas: 
+        "main_nav"
+        "seconday_nav"
+        "content_wrapper"
+    ;
+}
+
+/* ---------------- GRID TEMPLATE AREAS ---------------- */
+/* ---------------------- WRAPPERS --------------------- */
+
+
+.main_nav {
+    border: 2px solid black;
+    width: 1200px;
+    /* min-height: 24em; */
+    margin: 0 auto;
+}
+
+.introductory_wrapper{
+    border: 2px solid black;
+    width: 1200px;
+    /* min-height: 24em; */
+    margin: 0 auto;
+}
+
+.content_wrapper{
+    border: 2px solid black;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* ---------------------- CONTENT --------------------- */
+
+
+.content_wrapper .s1 {
+    width: 100%;
+    min-height: 40em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "box1 box2"
+    ;
+    border-bottom: 3px solid var(--main_border_color);
+    background-color: var(--main_color)
+}
+
+/* ---------------------- BOX1 --------------------- */
+
+
+.content_wrapper .s1 .box1{
+    grid-area: "box1";
+}
+
+.content_wrapper .s1 .box1 .box_content {
+    width:100%;
+    height:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "a b"
+        "c c";
+    padding: 30px;
+}
+
+.content_wrapper .s1 .box1 .top_left {
+    grid-area: "a";
+    background: blue;
+}
+.content_wrapper .s1 .box1 .top_right {
+    grid-area: "b";
+    background: red;
+}
+.content_wrapper .s1 .box1 .bottom {
+    grid-area: "c";
+    grid-column: span 2;
+    background: yellow;
+}
+
+
+
+/* ---------------------- BOX2 --------------------- */
+
+
+.content_wrapper .s1 .box2{
+    background-color: brown;
+    grid-area: "box2";
+}
+
