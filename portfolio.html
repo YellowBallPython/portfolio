@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portest.css">
+    <link id="theme-style" rel="stylesheet" href="secondary.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 
@@ -54,7 +56,12 @@
                     <p>Made in: Costa Rica</p>
                     <p>Manufactured in: 1994</p>
                     <p>Core Tool: Python 3</p>
-                    <p>Biggest Dream: Take a selfie with George Hotz.</p>
+                    <p id="extra_height">Biggest Dream: Take a selfie with George Hotz.</p>
+                    <div class="social_icons">
+                        <a target="_blank" href="https://www.github.com/soloamilkar"><i class='bx bxl-github'></i></a>
+                        <a target="_blank" href="#"><i class='bx bxl-twitter'></i></a>
+                        <a target="_blank" href="#"><i class='bx bxl-instagram'></i></a>
+                    </div>
                 </div>
                 <div class="my_journey">
                     <small style="font-size:10px;">This is a div, class="my_journey". Inpect
@@ -71,7 +78,6 @@
                         from Costa Rica aiming to master back end technologies, looking for my own coding style, trying
                         to mix my own experiences with
                         the art of coding. Always hungry for learning new technologies. <a href="">read +</a></p>
-
                 </div>
             </div>
             <div class="languages_layout">
@@ -108,6 +114,48 @@
             </div>
         </div>
     </section>
+    <section class="projects">
+        <div class="container flex-column">
+            <h1>PORTFOLIO</h1>
+            <div class="grid grid-3">
+                <div class="grid-card">
+                    <div class="picture">
+                        <img src="./static/project_portfolio-100.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <p> Dentro de mi portfolio encontramos este website, este mismísimo website
+                            en el que estás navegando ahora mismo. <br>
+                            Twitee todo el proceso, por si te interesa <a href="#">leer +</a></p>
+                    </div>
+                    <div class="tags">
+                        Python - Django - HTML - CSS
+                    </div>
+                </div>
+                <div class="grid-card">
+                    <div class="picture">
+                        <img src="" alt="">
+                    </div>
+                    <div class="description p-5">
+                        description
+                    </div>
+                    <div class="tags p-3">
+                        tags
+                    </div>
+                </div>
+                <div class="grid-card">
+                    <div class="picture">
+                        <img src="" alt="">
+                    </div>
+                    <div class="description">
+                        description
+                    </div>
+                    <div class="tags">
+                        TAGS
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="contact">
         <div class="container flex">
             <div class="contact-form">
@@ -131,6 +179,7 @@
             </div>
         </div>
     </section>
+    <script src="main.js"></script>
 </body>
 
 </html>
