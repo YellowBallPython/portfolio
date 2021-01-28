@@ -12,6 +12,6 @@ chk.addEventListener("change", () => {
   if (chk.checked) {
     document.getElementById("theme-style").href = "secondary.css";
   } else {
-    document.getElementById("theme-style").href = "main.css";
+    document.getElementById("theme-style").href = "mains.css";
   }
 });
